@@ -1,43 +1,120 @@
-# Astro Starter Kit: Minimal
+# Chocolate Banana Paradise 🍰
 
-```sh
-npm create astro@latest -- --template minimal
+A modern, responsive cake shop website built with **Astro.js**, **React**, **Tailwind CSS**, and **Framer Motion**.
+
+## Features
+
+- ✨ Modern and elegant design with smooth animations
+- � Fully responsive layout for all devices
+- 🎨 Beautiful Framer Motion animations inspired by henok.cloud
+- 🚀 Fast loading times with Astro.js
+- 💅 Styled with Tailwind CSS
+- ⚡ Vite for lightning-fast development
+
+## Tech Stack
+
+- **Astro.js** - Static site generator
+- **React** - UI library for interactive components
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **Vite** - Build tool
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone <repository-url>
+cd cake
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+2. Install dependencies
+```bash
+npm install
+```
 
-## 🚀 Project Structure
+3. Start the development server
+```bash
+npm run dev
+```
 
-Inside of your Astro project, you'll see the following folders and files:
+4. Open [http://localhost:4321](http://localhost:4321) in your browser
 
-```text
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run astro` - Run Astro CLI commands
+
+## Project Structure
+
+```
 /
 ├── public/
+│   └── images/          # Static images
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/      # React components with Framer Motion
+│   │   ├── Header.tsx
+│   │   ├── Hero.tsx
+│   │   ├── CakeGallery.tsx
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   └── Footer.tsx
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   └── index.astro
+│   └── styles/
+│       └── global.css
+├── astro.config.mjs
+├── tailwind.config.mjs
+└── tsconfig.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Animations
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+The website features various Framer Motion animations including:
 
-Any static assets, like images, can be placed in the `public/` directory.
+- Parallax scrolling effects
+- Stagger animations for gallery items
+- Smooth page transitions
+- Interactive hover effects
+- Floating elements
+- Scroll-triggered animations
 
-## 🧞 Commands
+## Customization
 
-All commands are run from the root of the project, from a terminal:
+### Colors
+The color scheme is defined in `tailwind.config.mjs`. The primary colors are:
+- Pink: `#ec4899` (Primary accent)
+- Gray: Various shades for text and backgrounds
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### Images
+All images are stored in `public/images/` and can be easily replaced. The hero section uses `choco_banana.png` as requested.
 
-## 👀 Want to learn more?
+### Content
+Edit the components in `src/components/` to modify the content, or update the data arrays within components.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Performance
+
+- Astro.js provides excellent performance with minimal JavaScript bundle
+- Images are optimized and lazy-loaded
+- CSS is purged to reduce file size
+- React components are hydrated only when needed
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+- Animation inspiration from [henok.cloud](https://henok.cloud/)
+- Built with love using modern web technologies
