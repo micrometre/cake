@@ -13,13 +13,18 @@ const Header = () => {
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <motion.div 
-            className="text-2xl font-bold text-gray-800"
+          <motion.a 
+            href="#"
+            className="text-2xl font-bold text-gray-800 cursor-pointer"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
           >
             Chocolate Banana Paradise
-          </motion.div>
+          </motion.a>
           
           <div className="hidden md:flex space-x-8">
             {['Cakes', 'About Us', 'Contact'].map((item, index) => (

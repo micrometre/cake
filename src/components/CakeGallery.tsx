@@ -29,13 +29,13 @@ const cakes = [
   },
   {
     id: 5,
-    image: '/images/cake1.png',
+    image: '/images/classic_ vanilla.png',
     title: 'Classic Vanilla',
     description: 'Timeless vanilla cake with buttercream frosting and elegant decorations.',
   },
   {
     id: 6,
-    image: '/images/cake2.png',
+    image: '/images/berry_bliss.png',
     title: 'Berry Bliss',
     description: 'Mixed berry cake with fresh fruit and whipped cream topping.',
   },

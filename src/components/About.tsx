@@ -101,7 +101,7 @@ const About = () => {
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
                 <img 
-                  src="/images/cake3.png" 
+                  src="/images/choco_banana_optimized.webp" 
                   alt="Cake making process" 
                   className="w-full h-48 object-cover rounded-2xl shadow-lg"
                 />

@@ -15,6 +15,9 @@ const { title } = Astro.props;
     <meta name="description" content="Beautifully crafted cakes for every occasion" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Preload optimized hero images for faster loading -->
+    <link rel="preload" href="/images/choco_banana_optimized.webp" as="image" type="image/webp" />
+    <link rel="preload" href="/images/choco_banana_optimized.jpg" as="image" type="image/jpeg" />
     <title>{title}</title>
   </head>
   <body>

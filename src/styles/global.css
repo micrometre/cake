@@ -25,6 +25,36 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Optimize image rendering */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Optimize background images */
+.hero-bg {
+  background-attachment: fixed;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Better loading placeholder animation */
+@keyframes shimmer-gradient {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-gradient {
+  background: linear-gradient(90deg, #fce7f3 0%, #f9a8d4 25%, #ec4899 50%, #f9a8d4 75%, #fce7f3 100%);
+  background-size: 200% 100%;
+  animation: shimmer-gradient 2s ease-in-out infinite;
+}
+
 /* Custom animations */
 @keyframes float {
   0%, 100% {
